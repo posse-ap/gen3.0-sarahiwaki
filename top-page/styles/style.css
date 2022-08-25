@@ -4,8 +4,11 @@
     height: 27px;
 }
 
+.about-p-button{
+   display: flex;
+}
 .posselogo{
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 
@@ -44,48 +47,16 @@
     text-transform: none;
   }
   
-  .p-line{
-      margin-top: 64px;
-  }
-  .p-line__body {
-    background: url(../../assets-ph1-website-main/img/bg-line.jpg) center center/cover;
-    border-radius: 28px;
-    overflow: hidden;
-    padding: 42px 24px;
-    position: relative;
+  .p-top-hero{
+      margin-top: 30px;
   }
 
-  .p-line-heading{
-    color: #eff2f5;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-
-}
-  .p-line__body::before {
-    background-color: rgba(0, 113, 188, 0.9);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  .l-container{
-      margin: 0 auto;
-      padding: 0 24px;
-      max-width: 1032px;
-      padding: 0 16px;
-      width: 100%;
-  }
- 
 .p-top-hero-body{
     position: absolute;
-    width: 375px;
-    height: 160px;
-    left: 142px;
-    top: 279px;
+    width: 500px;
+    height: 281px;
+    left: 80px;
+    top: 198px;
     align-self: center;
     background-color: #eff2f5;
     border-radius: 20px;
@@ -97,9 +68,10 @@
 
 .p-top-hero-title{
     color: #0071bc;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 1.8;
+    text-align: center;
 }
 
 .p-top-hero-catchcopy{
@@ -107,17 +79,128 @@
     font-weight: 700;
     font-size: 60px;
     line-height: 80px;
+    text-align: center;
   
 }
 .p-top-hero-image{
     position: relative;
     display: flex;
-    margin: 0 auto;
     width: 976px;
     height: 680px;
-    text-align: right;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .p-top-hero-image img{
+    position: absolute;
     border-radius: 80px 0px 0px 80px;
+width: 100%;
+height: 100%;
+}
+
+.p-top-hero-scrollDown{
+font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+   font-weight: 400;
+   font-size: 12px;
+}
+
+.p-about-container{
+    margin-top: 64px;
+}
+.p-about-heading{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 900;
+}
+
+.p-about-subheading{
+    text-align: center;
+    font-size: 14px;
+    color: #0071BC;
+    font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+
+}
+
+.p-about-image{
+    width: 472px ;
+    height: 312px;
+    border-radius: 24px;
+}
+
+.p-about{
+    display: flex;
+justify-content: center;
+}
+
+.p-about-content{
+    font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 180%;
+margin-left: 30px;
+}
+
+.p-line{
+    margin-top: 64px;
+}
+.p-line__body {
+  background: url(../../assets-ph1-website-main/img/bg-line.jpg) center center/cover;
+  border-radius: 28px;
+  overflow: hidden;
+  padding: 42px 24px;
+  position: relative;
+}
+
+.p-line-heading-logo{
+    display: flex;
+    justify-content: center;
+
+}
+.p-line-heading{
+  color: #eff2f5;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  font-family: 'Noto Sans JP';
+font-style: normal;
+}
+.p-line__body::before {
+  background-color: rgba(0, 113, 188, 0.9);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.l-container{
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 1032px;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.p-line-content{
+    text-align: center;
+    color: #eff2f5;
+  position: relative;
+  z-index: 10;
+  font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 160%;
+}
+
+.p-line-logo{
+    position: relative;
+  z-index: 10;
+width: 40px;
+height: 40px;
 }
