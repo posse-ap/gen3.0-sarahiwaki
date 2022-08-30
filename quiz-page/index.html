@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITクイズ | POSSE 初めてのWeb制作</title>
+    <link rel="stylesheet" href="./styles/reset1.css"/>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -38,35 +39,46 @@
 
     <main>
       <div class="q1">
-        <div class="q1-content">
+        <div class="q1-content js-quiz" data-quiz="0">
           <p class="q1-heading">Q1</p>
           <div>
             日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？
           </div>
           <div class="q1-image">
-          <img src="../assets-ph1-website-main/img/quiz/img-quiz01.png"/>
-        </div>
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz01.png" />
+          </div>
           <div class="q1-answer">
             <p>A</p>
           </div>
-        <div class="q1-button">
-            <button>
-                <p>約28万人</p>
-                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg">
-            </button>
-            <button>
-                <p>約79万人</p>
-                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg">
-            </button>
-            <button>
-                <p>約183万人</p>
-                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg">
-            </button>
-           </div>
-           <div class="q1-reference">
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  約28万人
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                約79万人
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                約183万人
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+          <div class="q1-reference">
             <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
-            <img src="../assets-ph1-website-main/img/icon/icon-note.svg" alt="">
-            </div>
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </main>

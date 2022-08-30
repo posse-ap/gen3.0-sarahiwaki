@@ -101,11 +101,15 @@
     border-radius: 8px;
 }
 
-.q1-button {
+.p-quiz-box__answer__list {
     display: flex;
+}
+.q1-button {
     text-align: left;
     font-size: 18px;
 }
+
+
 
 .q1-button button{
     font-size: 14px;
@@ -142,4 +146,8 @@
 
 .q1-reference img {
 text-align: left;
+}
+
+.is-selected {
+    color: #0071BC;
 }
