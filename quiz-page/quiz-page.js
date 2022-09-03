@@ -46,6 +46,8 @@
     target.classList.add(isCorrect ? 'is-correct' : 'is-incorrect');
   }
 
+  console.log(allQuiz)
+  
   // 各問題の中での処理
   allQuiz.forEach(quiz => {
     const answers = quiz.querySelectorAll('.js-answer');
@@ -54,6 +56,8 @@
     const answerTitle = quiz.querySelector('.js-answerTitle');
     const answerText = quiz.querySelector('.js-answerText');
 
+
+    
     answers.forEach(answer => {
       answer.addEventListener('click', () => {
         answer.classList.add('is-selected');
@@ -73,20 +77,3 @@
     })
   })
 }
-
-
-
-// const CORRECT_ANSWER = [
-//     {
-//         index:1
-//         value: '約79万人'
-//     };
-// ]
-// const allQuiz  = document.querySelectorAll('.js-quiz');
-
-// allQuiz.forEach(quiz => {
-//     const answers = quiz.querySelectorAll('.js-answer');
-//     const selectedQuiz = Number(quiz.getAttribute('data-quiz'));
-//     const answerBox = quiz.querySelector('.js-answerBox');
-//     const answerTitle = quiz.querySelector('.js-answerTitle');
-//     const answerText = quiz.querySelector('.js-answerText');

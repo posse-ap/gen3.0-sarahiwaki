@@ -148,6 +148,10 @@
 text-align: left;
 }
 
+.p-quiz-box__answer__button.is-selected{
+    border-color: #0071BC;
+}
+
 .is-selected {
     color: #0071BC;
 }
