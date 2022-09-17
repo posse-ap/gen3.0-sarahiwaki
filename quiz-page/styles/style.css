@@ -148,7 +148,6 @@
    height: 70px;
    font-size: 18px;
    margin-left: 15px;
-
 }
 
 .q1-reference img {
@@ -165,4 +164,28 @@ margin-left: 10px;
 /* .is-selected {
     color: #0071BC;
 } */
+
+.p-quiz-box__answer__correct{
+    background-color: #eff2f5;
+    /* padding: 24px 40px; */
+}
+
+.js-answerBox {
+    margin-bottom: 16px;
+}
+.js-answerTitle {
+    font-size: 24px;
+    /* color: #d44778; */
+}
+
+.js-answerTitle-correct {
+    color: #d44778;
+}
+
+.js-answerTitle-incorrect {
+    color: #0071BC;
+}
+.js-answerText{
+    font-size: 18px;
+}
 
