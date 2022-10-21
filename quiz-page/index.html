@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITクイズ | POSSE 初めてのWeb制作</title>
+    <link rel="stylesheet" href="./styles/reset1.css"/>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+
+    <header id="js-header" class="l-header p-header">
+      <div class="p-header__logo"><img src="../assets-ph1-website-main/img/logo.svg" alt="POSSE"></div>
+      <button class="p-header__button" id="js-headerButton"></button>
+      <div class="p-header__inner">
+        <nav class="p-header__nav">
+          <ul class="p-header__nav__list">
+            <li class="p-header__nav__item">
+              <a href="../" class="p-header__nav__item__link">POSSEとは</a>
+            </li>
+            <li class="p-header__nav__item">
+              <a href="../quiz/" class="p-header__nav__item__link">クイズ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="p-header__official">
+          <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank" rel="noopener noreferrer" class="p-header__official__link--line">
+            <i class="u-icon__line"></i>
+            <span class="">POSSE公式LINEを追加</span>
+            <i class="u-icon__link"></i>
+          </a>
+          <a href="" class="p-header__official__link--website">POSSE 公式サイト<i class="u-icon__link"></i></a>
+        </div>
+        <ul class="p-header__sns p-sns">
+          <li class="p-sns__item">
+            <a href="https://twitter.com/posse_program" target="_blank" rel="noopener noreferrer" class="p-sns__item__link" aria-label="Twitter">
+              <i class="u-icon__twitter"></i>
+            </a>
+          </li>
+          <li class="p-sns__item">
+            <a href="https://www.instagram.com/posse_programming/" target="_blank" rel="noopener noreferrer" class="p-sns__item__link" aria-label="instagram">
+              <i class="u-icon__instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+    <div id="box">
+    </div>
+    
+    <!-- <main> -->
+      <!-- <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="0">
+          <p class="q1-heading">Q1</p>
+          <div class="q1-heading-content">
+            日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？
+          </div>
+          <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz01.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  約28万人
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                約79万人
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                約183万人
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="1">
+          <p class="q1-heading">Q2</p>
+          <div class="q1-heading-content">
+            既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？          </div>
+          <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz02.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  INTECH
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                BIZZTECH
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                X-TECH
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="2">
+          <p class="q1-heading">Q3</p>
+          <div class="q1-heading-content">
+            IoTとは何の略でしょう？          
+            <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz03.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  Internet of Things
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                Integrate into Technology
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                Information  on Tool
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="3">
+          <p class="q1-heading">Q4</p>
+          <div class="q1-heading-content">
+            日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？                    
+            <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz04.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  Society 5.0                  
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                CyPhy
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                SDGs
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="4">
+          <p class="q1-heading">Q5</p>
+          <div class="q1-heading-content">
+            イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？          
+            <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz05.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  Web3.0
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                NFT
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                メタバース
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="q1">
+        <div class="q1-content js-quiz" data-quiz="5">
+          <p class="q1-heading">Q6</p>
+          <div class="q1-heading-content">
+            先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？            <div class="q1-image">
+            <img src="../assets-ph1-website-main/img/quiz/img-quiz06.png" />
+          </div>
+          <div class="q1-answer">
+            <p>A</p>
+          </div>
+          <div class="q1-button">
+            <ul class="p-quiz-box__answer__list ">
+              <li class="p-quiz-box__answer_item">
+                <button class="p-quiz-box__answer__button js-answer" data-answer="0">
+                  約2倍
+                  <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg"/>
+                </button>
+              </li>
+              <li class="p-quiz-box__answer__button2">
+              <button class="p-quiz-box__answer__button js-answer" data-answer="1">
+                約5倍
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+              <li>
+              <button class="p-quiz-box__answer__button js-answer" data-answer="2">
+                約11倍
+                <img src="../assets-ph1-website-main/img/icon/icon-arrow.svg" />
+              </button>
+            </li>
+            </ul>
+          </div>
+
+          <div class="p-quiz-box__answer__correct js-answerBox">
+            <p class="js-answerTitle"></p>
+            <p class="js-answerText"></p>
+          </div>
+
+          <div class="q1-reference">  
+            <img
+              src="../assets-ph1-website-main/img/icon/icon-note.svg"
+              alt=""
+            />
+            <p>経済産業省 2019年3月 － IT 人材需給に関する調査</p>
+          
+          </div>
+        </div>
+      </div>
+
+    </main> -->
+
+    <script src="quiz-page.js"></script>
+  </body>
+</html>

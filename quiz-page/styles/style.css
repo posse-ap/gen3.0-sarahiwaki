@@ -1,0 +1,240 @@
+
+.l-header {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .l-footer {
+    border-top: solid 1px #eee;
+  }
+  .l-footer__inner {
+    padding: 56px 24px 32px;
+  }
+  
+  .p-header {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    padding: 15px 24px;
+  }
+  .p-header__logo {
+    position: relative;
+    width: 120px;
+    z-index: 100;
+  }
+  .p-header__button {
+    height: 40px;
+    position: fixed;
+    right: 19px;
+    top: 8px;
+    width: 40px;
+    z-index: 1000;
+  }
+  .p-header__button::before, .p-header__button::after {
+    background-color: #333;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transition: transform 0.4s, top 0.4s;
+    width: 34px;
+  }
+  .p-header__button::before {
+    top: 12px;
+    transform: translate(-50%, 0);
+  }
+  .p-header__button::after {
+    top: 27px;
+    transform: translate(-50%, 0);
+  }
+  .p-header.is-open .p-header__button::before {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .p-header.is-open .p-header__button::after {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .p-header__inner {
+    display: flex;
+  }
+  .p-header__nav__list {
+    display: flex;
+    gap: 24px;
+  }
+  .p-header__nav__item__link {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+  .p-header__official {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: auto;
+  }
+  .p-header__official__link--line {
+    background-color: #5FDF5B;
+    border-radius: 5em;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 16px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .p-header__official__link--line .u-icon__line {
+    font-size: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .p-header__official__link--line .u-icon__link {
+    font-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .p-header__official__link--website {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .p-header__official__link--website .u-icon__link {
+    font-size: 14px;
+    margin-left: 6px;
+  }
+  
+
+.q1{
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.q1-heading-content{
+    margin-top: 5%;
+}
+.q1-image{
+    width: 100%;
+    /* top: 50%;
+    left: 50%; */
+    text-align: center;
+    margin-top: 60px;
+}
+
+.q1-image img{
+    width: 80%;
+}
+.q1-content{
+    margin: 0 auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.q1-answer p{
+    color: #EFF2F5;
+    background-color: #E34E70;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 5%;
+}
+
+.p-quiz-box__answer__list {
+    display: flex;
+}
+.q1-button {
+    text-align: left;
+    font-size: 18px;
+}
+
+
+
+.q1-button button{
+    font-size: 14px;
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 5px solid #F6F6F6;
+    width: 300px;
+    height: 70px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.q1-button img{
+    text-align: right;
+}
+
+.q1-reference {
+    line-height: 70px;
+    display: flex;
+    background-color: #F6F6F6;
+}
+.q1-reference p {
+   /* background-color: #F6F6F6; */
+   border-radius: 8px;
+   width: 100%;
+   height: 70px;
+   font-size: 18px;
+   margin-left: 15px;
+}
+
+.q1-reference img {
+text-align: left;
+margin-left: 10px;
+}
+
+.p-quiz-box__answer__button.is-selected{
+    border-color: #0071BC;
+    background-color: #eff2f5;
+
+}
+
+/* .is-selected {
+    color: #0071BC;
+} */
+
+.p-quiz-box__answer__correct{
+    background-color: #eff2f5;
+    /* padding: 24px 40px; */
+}
+
+.js-answerBox {
+    margin-bottom: 16px;
+}
+.js-answerTitle {
+    font-size: 24px;
+    /* color: #d44778; */
+}
+
+.js-answerTitle-correct {
+    color: #d44778;
+}
+
+.js-answerTitle-incorrect {
+    color: #0071BC;
+}
+.js-answerText{
+    font-size: 18px;
+}
+
